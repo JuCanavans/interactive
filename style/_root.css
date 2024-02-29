@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --background-color: #141519;
+    --background-main: linear-gradient(#242a34, #171e28);
+    --background-check: #262f38;
+    --background-submit-hover: #fc7613;
+    --background-check: #7c8798;
+    --color-primary-hover: #fbfdfd;
+    --color-text: #818892;
+    --font-family-primary: "Overpass", sans-serif;
+}

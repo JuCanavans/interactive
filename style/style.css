@@ -1,0 +1,198 @@
+@import url("../style/_root.css");
+
+/*
+:root{
+    --background-color: #141519;
+    --background-main: linear-gradient(#242a34, #171e28);
+    --background-check: #262f38;
+    --background-submit-hover: #fc7613;
+    --background-check: #7c8798;
+    --color-primary-hover: #fbfdfd;
+    --color-text: #818892;
+    --font-family-primary: "Overpass", sans-serif; *400 and 500*
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: var(--font-family-primary);
+    font-size: 15px;
+}
+
+.dad_section{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.main_section{
+    width: 410px;
+    background: var(--background-main);
+    border-radius: 1.8rem;
+    overflow: hidden;
+}
+
+.description{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.decoration_star{
+    background-color: #262f38;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-img{
+    background-image: url("../img/icon-star.svg");
+    background-size: cover;
+    width: 19px;
+    height: 18px;
+}
+
+.title_text_description{
+    text-align: left;
+}
+
+.title_text_description h1{
+    color: var(--color-primary-hover);
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+}
+
+.title_text_description p{
+    color: var( --color-text);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.lista_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avaliation{
+    list-style: none;
+    background: #262f38;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    color: var(--color-primary-hover);
+}
+
+.lista_button li:hover{
+    background-color: var(--background-submit-hover);
+}
+
+button{
+    background: var(--background-submit-hover);
+    border: none;
+    height: 45px;
+    border-radius: 3em;
+    cursor: pointer;
+    color: var(--color-primary-hover);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*Passando o curso ou clicando*/
+
+button:hover{
+    background: var(--color-primary-hover);
+    color: var(--background-submit-hover);
+}
+
+/*IDEIA DE SEGUNDA TELA APOS CLICAR NO SUBMIT*/
+
+.hidden{
+    display: none;
+}
+
+
+.description_avance{
+    row-gap: 1.6rem;
+}
+
+.section_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action_select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_select{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    background-color: #262f38;
+    width: 55%;
+    height: 30px;
+}
+
+.text_select span{
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--background-submit-hover);
+}
+
+.text_congra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1em;
+}
+
+.text_congra h2{
+    color: var(--color-primary-hover);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.text_congra p{
+    color: var(--color-text);
+    font-size: 17px;
+}
+
+@media screen and (max-width: 400px){
+    .main_section{
+        width: 90%;
+    }
+    .avaliation{
+        width: 40px;
+        height: 40px;
+    }
+}

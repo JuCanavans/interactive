@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script.js" defer></script>
+    <title>Interactive</title>
+</head>
+<body>
+    <section class="dad_section">
+        <main class="main_section">
+            <div class="description">
+                <picture>
+                    <div class="decoration_star">
+                        <div class="description-img"></div>
+                    </div>
+                </picture>
+
+                <div class="title_text_description">
+                    <h1>
+                        How did we do?
+                    </h1>
+                    <p>
+                        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+                    </p>
+                </div>
+
+                <ul class="lista_button">
+                    <li id="contat_id" class="avaliation">
+                        1
+                    </li>
+                    <li id="contat_id" class="avaliation">
+                        2
+                    </li>
+                    <li id="contat_id" class="avaliation">
+                        3
+                    </li>
+                    <li id="contat_id" class="avaliation">
+                        4
+                    </li>
+                    <li id="contat_id" class="avaliation">
+                        5
+                    </li>
+                </ul>
+
+                <button id="button_send">
+                    Submit
+                </button>
+            </div>
+        </main>
+
+        <!--ACTIVATE TELA 2-->
+
+        <main id="main_section_finished" class="main_section hidden">
+            <div class="description description_avance">
+                <picture>
+                    <div class="section_img">
+                        <img src="./img/illustration-thank-you.svg" alt="">
+                    </div>
+                </picture>
+
+                <div class="action_select" id="select_result">
+                    <div class="text_select">
+                        <span>You selected <span id="result_number">0</span> out of 5</span>
+                    </div>
+                </div>
+
+                <div class="text_congra">
+                    <h2>
+                        Thank you!
+                    </h2>
+                    <p>
+                        We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
